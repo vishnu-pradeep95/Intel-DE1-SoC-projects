@@ -1,4 +1,4 @@
-This advanced Video driver has 3 additional modules compared to the one from Lab6.
+This advanced Video driver has 3 additional modules compared to the one previously
 
 1)Bezier curves:
 To draw a bezier curve of order 2, use the command: "echo curve2 x0,y0 x1,y1 x2,y2 color>/dev/VIDEO"
