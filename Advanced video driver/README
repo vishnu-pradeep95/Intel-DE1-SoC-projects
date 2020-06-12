@@ -1,0 +1,21 @@
+This advanced Video driver has 3 additional modules compared to the one from Lab6.
+
+1)Bezier curves:
+To draw a bezier curve of order 2, use the command: "echo curve2 x0,y0 x1,y1 x2,y2 color>/dev/VIDEO"
+To draw a bezier curve of order 3, use the command: "echo curve3 x0,y0 x1,y1 x2,y2 x3,y3 color>/dev/VIDEO"
+
+2)Polygon Fills
+To draw an arbitrary polygon fill you have to input the number of sides required and a set of initial coordinates. This will generate a random complex polygon fill with the required number of sides.
+command:"echo polygon_fills n x,y>/dev/VIDEO"
+
+3)Animated Sprite:
+To view the sprite animation, use the command:"echo sprite>/dev/VIDEO"
+A user space program has also been included to execue the sprite animation (file name:sprite_anim.c)
+
+Note:
+Please note that vertical synchronization and clearing has to be done manually after each drawing for modules 1 and 2.
+command for V-sync: "echo Vsync>/dev/VIDEO"
+command for clear:  "echo clear>/dev/VIDEO"
+
+
+
